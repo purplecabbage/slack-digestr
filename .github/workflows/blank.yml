@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: purplecabbage/slack-digest@v0
+      - uses: purplecabbage/slack-digest@v0.1
         with:
           slack-token: ${{ secrets.SLACK_TOKEN }}  
       - uses: actions/checkout@v2
