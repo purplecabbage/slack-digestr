@@ -17,7 +17,6 @@ jobs:
         with:
           slack-token: ${{ secrets.SLACK_TOKEN }}  
       - uses: actions/checkout@v2
-      - run: |
           git add .
           git commit -m "generated"
           git push
