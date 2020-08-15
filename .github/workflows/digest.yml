@@ -5,8 +5,7 @@ name: CI
 # events but only for the master branch
 on:
   schedule:
-  - cron: "10 8 * * *"
-  workflow_dispatch:
+  - cron: "15 8 * * *"
 jobs:
   build:
     runs-on: ubuntu-latest
