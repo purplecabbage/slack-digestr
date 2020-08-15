@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: purplecabbage/slack-digest@v0
         with:
-          slack-token: basdbasdbasd  
+          slack-token: ${{ secrets.SLACK_TOKEN }}  
       - uses: actions/checkout@v2
       - run: |
           date > generated.txt
