@@ -9,6 +9,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - uses: purplecabbage/slack-digest@v0
+        with:
+          slack-token: basdbasdbasd  
       - uses: actions/checkout@v2
       - run: |
           date > generated.txt
